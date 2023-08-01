@@ -373,6 +373,47 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="modal-close-btn" data-modal-close>&times;</button>
+
+        <span class="modal-title">Leave your information and we'll call you back</span>
+        <form action="modal-form">
+          <label class="modal-form-field">Name
+            <div class="modal-form-field-cover">
+              <input type="text" name="user-name" class="modal-input-form">
+              <svg class="modal-form-icon" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-person-black-modal"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-form-field">Telephone
+            <div class="modal-form-field-cover">
+              <input type="tel" name="user-name" class="modal-input-form">
+              <svg class="modal-form-icon" width="13px" height="13px">
+                <use href="./images/icons.svg#icon-phone-black-modal"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-form-field">E-mail
+            <div class="modal-form-field-cover">
+              <input type="email" name="user-name" class="modal-input-form">
+              <svg class="modal-form-icon" width="15px" height="12px">
+                <use href="./images/icons.svg#icon-email-black-modal"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label class="modal-form-field">Comments
+            <textarea name="user-comment" id="" placeholder="Enter the text" class="modal-form-comment"></textarea>
+          </label>
+
+          <input type="checkbox" name="user-terms" value="accept-terms" class="modal-form-terms visually-hidden" id="check-terms">
+          <label for="check-terms" class="modal-form-terms-label">
+            I agree with the letter and accept the
+            <a href="#" class="form-terms-link">Terms and Conditions</a>
+          </label>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
